@@ -5,23 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        table,
+    
         th,
         td{
             border: 1px solid black;
+            
         }
+       
+        .homepage{
+            margin: 25px;
+            padding: 25px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: wheat;
+        }
+        table{
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+
     </style>
 </head>
 <body>
+    <div class="homepage">
     <table>
         <tr>
-            <th>id</th>
             <th>Email</th>
             <th>Username</th>
         </tr>
         <% for (user of users){ %>
             <tr>
-                <td> <%= user.id %> </td>
+
                 <td> <%= user.email %> </td>
                 <td> <%= user.username %> </td>
                 <td>
@@ -34,6 +49,7 @@
         <%  }   %>
         
     </table>
+</div>
 </body>
 </html>
 

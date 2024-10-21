@@ -9,6 +9,7 @@ app.use(methodOveride("_method"));
 app.use(express.urlencoded({ extended : true}));
 app.set("view engine","ejs");
 app.set("views",path.join(__dirname, "/views"));
+
 // Create a connection to the database
 const connection = mysql.createConnection({
     host: 'localhost',
